@@ -68,6 +68,11 @@ class DdkGoodsPromotionUrlGenerateRequest implements  RequestInterface
     private $generateWeApp;
 
 
+    /**
+     * 是否生成带授权的单品链接。如果未授权，则会走授权流程
+     * @var
+     */
+    private $generateAuthorityUrl;
 
     public function setPid($pid)
     {
@@ -159,6 +164,16 @@ class DdkGoodsPromotionUrlGenerateRequest implements  RequestInterface
         return $this->generateWeApp;
     }
 
+    public function setGenerateAuthorityUrl($generateAuthorityUrl)
+    {
+        $this->generateAuthorityUrl = $generateAuthorityUrl;
+    }
+
+    public function getGenerateAuthorityUrl()
+    {
+        $this->generateAuthorityUrl;
+    }
+
     public function getParams()
     {
         $params = [
@@ -172,7 +187,8 @@ class DdkGoodsPromotionUrlGenerateRequest implements  RequestInterface
             'generate_weapp_webview' => $this->generateWeappWebview,
             'zs_duo_id'              => $this->zsduoId,
             'generate_we_app'        => $this->generateWeApp,
-            'generate_schema_url'    => "true"
+            'generate_schema_url'    => "true",
+            'generate_authority_url' => "true"
         ];
         return array_filter($params);
     }
