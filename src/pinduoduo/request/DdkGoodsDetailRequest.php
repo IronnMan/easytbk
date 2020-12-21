@@ -18,6 +18,12 @@ class DdkGoodsDetailRequest implements RequestInterface
      */
     private $goodsIdList;
 
+    /**
+     * 商品goodsSign，用于查询指定商品，仅支持单个查询
+     * @var
+     */
+    private $goodsSign;
+
     public function setType($type)
     {
         $this->type = $type;
@@ -26,6 +32,11 @@ class DdkGoodsDetailRequest implements RequestInterface
     public function setGoodsIdList($goodsIdList)
     {
         $this->goodsIdList = $goodsIdList;
+    }
+
+    public function setGoodsSign($goodsSign)
+    {
+        $this->goodsSign = $goodsSign;
     }
 
 
@@ -39,11 +50,17 @@ class DdkGoodsDetailRequest implements RequestInterface
         return $this->goodsIdList;
     }
 
+    public function getGoodsSign()
+    {
+        return $this->goodsSign;
+    }
+
     public function getParams()
     {
         return [
             'type'          => $this->type,
-            'goods_id_list' => $this->goodsIdList
+            'goods_id_list' => $this->goodsIdList,
+            'goods_sign'    => $this->goodsSign
         ];
     }
 }
