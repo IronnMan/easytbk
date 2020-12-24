@@ -5,6 +5,7 @@ namespace NiuGengYun\EasyTBK\TaoBao\Request;
 use NiuGengYun\EasyTBK\TaoBao\RequestCheckUtil;
 /**
  * TOP API: taobao.top.auth.token.create request
+ * 用户通过code换获取access_token，https only
  *
  * @author auto create
  * @since 1.0, 2018.07.25

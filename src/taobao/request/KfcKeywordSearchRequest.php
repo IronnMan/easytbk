@@ -5,6 +5,7 @@ namespace NiuGengYun\EasyTBK\TaoBao\Request;
 use NiuGengYun\EasyTBK\TaoBao\RequestCheckUtil;
 /**
  * TOP API: taobao.kfc.keyword.search request
+ * 对输入的文本信息进行禁忌关键词匹配，返回匹配的结果
  *
  * @author auto create
  * @since 1.0, 2018.07.26

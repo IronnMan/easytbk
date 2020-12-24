@@ -5,6 +5,7 @@ namespace NiuGengYun\EasyTBK\TaoBao\Request;
 use NiuGengYun\EasyTBK\TaoBao\RequestCheckUtil;
 /**
  * TOP API: taobao.files.get request
+ * 获取业务方暂存给ISV的文件列表
  *
  * @author auto create
  * @since 1.0, 2018.07.25

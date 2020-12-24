@@ -5,6 +5,7 @@ namespace NiuGengYun\EasyTBK\TaoBao\Request;
 use NiuGengYun\EasyTBK\TaoBao\RequestCheckUtil;
 /**
  * TOP API: taobao.appip.get request
+ * 获取ISV发起请求服务器IP
  *
  * @author auto create
  * @since 1.0, 2018.07.25

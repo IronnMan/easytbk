@@ -5,6 +5,7 @@ namespace NiuGengYun\EasyTBK\TaoBao\Request;
 use NiuGengYun\EasyTBK\TaoBao\RequestCheckUtil;
 /**
  * TOP API: taobao.httpdns.get request
+ * 获取TOP DNS配置
  *
  * @author auto create
  * @since 1.0, 2018.07.25

@@ -5,6 +5,7 @@ namespace NiuGengYun\EasyTBK\TaoBao\Request;
 use NiuGengYun\EasyTBK\TaoBao\RequestCheckUtil;
 /**
  * TOP API: taobao.ju.items.search request
+ * 搜索聚划算商品
  *
  * @author auto create
  * @since 1.0, 2018.07.25

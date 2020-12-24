@@ -5,6 +5,7 @@ namespace NiuGengYun\EasyTBK\TaoBao\Request;
 use NiuGengYun\EasyTBK\TaoBao\RequestCheckUtil;
 /**
  * TOP API: taobao.time.get request
+ * 获取淘宝系统当前时间
  *
  * @author auto create
  * @since 1.0, 2018.07.25

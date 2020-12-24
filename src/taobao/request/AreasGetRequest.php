@@ -5,6 +5,8 @@ namespace NiuGengYun\EasyTBK\TaoBao\Request;
 use NiuGengYun\EasyTBK\TaoBao\RequestCheckUtil;
 /**
  * TOP API: taobao.areas.get request
+ * 查询标准地址区域代码信息。可以直接参考最新的行政区域代码：
+ * http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/
  *
  * @author auto create
  * @since 1.0, 2018.06.27
