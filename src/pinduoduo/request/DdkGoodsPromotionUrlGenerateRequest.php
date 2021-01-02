@@ -67,6 +67,12 @@ class DdkGoodsPromotionUrlGenerateRequest implements  RequestInterface
      */
     private $generateWeApp;
 
+    /**
+     * 商品goodsSign，仅支持单个生链。goodsId和goodsSign必须传入其中一个，建议使用goods_sign_list传入goodsSign
+     * @var
+     */
+    private $goodsSign;
+
 
     /**
      * 是否生成带授权的单品链接。如果未授权，则会走授权流程
@@ -174,6 +180,16 @@ class DdkGoodsPromotionUrlGenerateRequest implements  RequestInterface
         $this->generateAuthorityUrl;
     }
 
+    public function setGoodsSign($goodsSign)
+    {
+        $this->goodsSign = $goodsSign;
+    }
+
+    public function getGoodsSign()
+    {
+        $this->goodsSign;
+    }
+
     public function getParams()
     {
         $params = [
@@ -187,6 +203,7 @@ class DdkGoodsPromotionUrlGenerateRequest implements  RequestInterface
             'generate_weapp_webview' => $this->generateWeappWebview,
             'zs_duo_id'              => $this->zsduoId,
             'generate_we_app'        => $this->generateWeApp,
+            'goods_sign'             => $this->goodsSign,
             'generate_schema_url'    => "true",
             'generate_authority_url' => "true"
         ];
