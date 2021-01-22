@@ -156,6 +156,11 @@ class TbkDgMaterialOptionalRequest
      **/
     private $startTkRate;
 
+    /**
+     * 本地化业务入参-分页唯一标识，非首页的请求必传，值为上一页返回结果中的page_result_key字段值
+     */
+    private $pageResultKey;
+
     private $apiParas = array();
 
     public function setAdzoneId($adzoneId)
@@ -475,6 +480,17 @@ class TbkDgMaterialOptionalRequest
     public function getStartTkRate()
     {
         return $this->startTkRate;
+    }
+
+    public function setPageResultKey($pageResultKey)
+    {
+        $this->pageResultKey = $pageResultKey;
+        $this->apiParas["pageResultKey"] = $pageResultKey;
+    }
+
+    public function getPageResultKey()
+    {
+        return $this->pageResultKey;
     }
 
     public function getApiMethodName()
